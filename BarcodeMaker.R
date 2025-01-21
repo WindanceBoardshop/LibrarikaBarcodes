@@ -2,6 +2,7 @@ library(ggplot2)
 library(stringr)
 library(tidyverse)
 library(baRcodeR)
+library(pdftools)
 
 data <- read.csv(paste0('Data/', list.files('Data')))
 
@@ -49,5 +50,6 @@ custom_create_PDF( name ='LibrarikaBooklet',
                    Fsz = 9.5,
                    denote = "",
                    label_height = .9)
-  
+# run this to combine the DEMO Fleet How To Guide with the Demo Fleet Barcodes.  
 
+pdftools::pdf_combine(input = c('LibrarikaBooklet.pdf','Demo_Fleet_Guide.pdf'), output = 'DemoFleetGuide.pdf')

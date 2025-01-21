@@ -1,0 +1,75 @@
+---
+title: "Windance Demo Gear"
+author: "Jason Elder"
+date: "2025-01-21"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+1.  How to check items in and out of the demo fleet.
+2.  How to add items to the demo fleet
+3.  How to delete items from the demo fleet.
+
+## Checking items in and out of the Demo fleet
+
+-   Go to TeamPassword and login
+
+-   Navigate to Librarika and login
+
+-   Navigate to the dashboard of Librarika.
+
+-   Ask the customer if they have used the demo fleet this year.
+
+### Create New Customer Account
+
+-   If yes proceed to step 6. If not, creat a new Member acocunt by pressing `Add` in the Members section of the Dashboard.
+
+-   Include: `Name`, `Email`, `Phone Number`, and select `Customers` in the Member Group Field
+
+-   Navigate back to the Dashboard
+
+-   Decide which products the Customer needs
+
+### Check-Out
+
+-   Press the `Check Out` button on the dashboard
+
+-   Enter `Customer Name` and select the proper option
+
+-   Scan an item using Either the Computer Barcode Scanner or The Ipad camera
+
+-   Press `Sumbit`. To add more items, scan again and submit. Select `Close` when all items are added.
+
+### Check-In
+
+-   Select `Check-In` from the dashboard.
+
+-   Check Item For damage
+
+-   Scan Item
+
+-   Add Remark for any damage noticed. Otherwise type `No Damage` and your initials.
+
+## Permanently Adding and Deleting Items From the demo fleet.
+
+When a product is sold/lost/stolen complete this form to remove it from the Demo Fleet Inventory System (Librarika).
+
+When a New Item is added to the Demo Fleet. Complete this form to have it added to the Demo Fleet Inventory Managment System (Librarika).
+
+```{r QRcode, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(tinytex)
+library(qrcode)
+
+plot(qr_code('https://docs.google.com/forms/d/e/1FAIpQLSddpF90TXOApElrylcqBXn94vBJvAAdQsdwZ03dcEXqjBl4Lw/viewform'))
+
+```
+
+## Updating The Demo Fleet Booklet/Printing New Demo Fleet stickers.
+
+Ask Jason or Nick
+
+The script for genreating new Barcodes is in the Windance GitHub Account Repository `LibrarikaBarcodes`.
+
+See The ReadMe file in GitHub for Printing Steps.
