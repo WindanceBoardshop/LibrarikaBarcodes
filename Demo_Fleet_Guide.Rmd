@@ -12,39 +12,38 @@ output:
 2.  How to add items to the demo fleet
 3.  How to delete items from the demo fleet.
 
-## Checking items in and out of the Demo fleet
+## Checking items in and out of the Demo fleet (IPads) 
+- Go to Librarika App
+- select Passwords
+- select the Librarika Password
+- Ask Customer if they have used the Demo fleet this year
+- if they have not, create a New `Member` Account
 
--   Go to TeamPassword and login
+### Creating a New Member Account
 
--   Navigate to Librarika and login
-
--   Navigate to the dashboard of Librarika.
-
--   Ask the customer if they have used the demo fleet this year.
-
-### Create New Customer Account
-
--   If yes proceed to step 6. If not, creat a new Member acocunt by pressing `Add` in the Members section of the Dashboard.
-
--   Include: `Name`, `Email`, `Phone Number`, and select `Customers` in the Member Group Field
-
--   Navigate back to the Dashboard
-
--   Decide which products the Customer needs
+- Select Members at the bottom of the screen
+- Select `+` at the top Right of the screen
+- Complete these Fields:
+-- Member No. = Customer Phone Number
+-- Name
+-- Email
+-- Phone
+- Select Save
+- Navgate to the Home Page
 
 ### Check-Out
+- ALL items must be checked in and out. Each individual item. Seriously tho... 
 
--   Press the `Check Out` button on the dashboard
-
--   Enter `Customer Name` and select the proper option
-
--   Scan an item using Either the Computer Barcode Scanner or The Ipad camera
-
--   Press `Sumbit`. To add more items, scan again and submit. Select `Close` when all items are added.
+-   Press the ` Quick Check Out` button
+-   Enter `Customer Phone Number` in the `Member No.` Field
+-   Scan item using the Ipad Camera
+-  Select the correct item that pops up
+- Select `Do Again` to add more items
+- Select `Done` when all items are added
 
 ### Check-In
 
--   Select `Check-In` from the dashboard.
+-   Select `Quick Check-In`
 
 -   Check Item For damage
 
@@ -52,11 +51,10 @@ output:
 
 -   Add Remark for any damage noticed. Otherwise type `No Damage` and your initials.
 
+
 ## Permanently Adding and Deleting Items From the demo fleet.
 
-When a product is sold/lost/stolen complete this form to remove it from the Demo Fleet Inventory System (Librarika).
-
-When a New Item is added to the Demo Fleet. Complete this form to have it added to the Demo Fleet Inventory Managment System (Librarika).
+When a product is sold/lost/stolen/Moved to Consignment complete this form to remove it from the Demo Fleet Inventory System (Librarika).
 
 ```{r QRcode, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 library(tinytex)
@@ -66,10 +64,22 @@ plot(qr_code('https://docs.google.com/forms/d/e/1FAIpQLSddpF90TXOApElrylcqBXn94v
 
 ```
 
-## Updating The Demo Fleet Booklet/Printing New Demo Fleet stickers.
+When a New Item is added to the Demo Fleet. Complete this form to have it added to the Demo Fleet Inventory Managment System (Librarika).
+
+```{r QRcode, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+plot(qr_code('https://docs.google.com/forms/d/e/1FAIpQLSddpF90TXOApElrylcqBXn94vBJvAAdQsdwZ03dcEXqjBl4Lw/viewform'))
+
+```
+
+## Updating The Demo Fleet Booklet and Printing New Demo Fleet stickers.
 
 Ask Jason or Nick
 
 The script for genreating new Barcodes is in the Windance GitHub Account Repository `LibrarikaBarcodes`.
 
-See The ReadMe file in GitHub for Printing Steps.
+See The ReadMe file in GitHub for Steps.
+
+### Questions
+
+- For addional questions ask ChatGPT, if that doesnt cut it ask Jason. 
