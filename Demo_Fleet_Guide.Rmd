@@ -29,7 +29,6 @@ output:
 - `Phone Number` 
 - `Name`
 - `Email`
-- `Phone`
 
 -   Select Save
 -   Navgate to the Home Page
