@@ -1,8 +1,10 @@
-
 name: Generate Barcode PDFs
 
 on:
   workflow_dispatch: # Allows manual trigger of the workflow
+
+permissions:
+  contents: write  # Required to push changes
 
 jobs:
   run-barcode-maker:
@@ -30,3 +32,17 @@ jobs:
       - name: Run BarcodeMaker Script
         run: |
           Rscript BarcodeMaker.R
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Auto-update barcode files from R script" || echo "No changes to commit"
+
+      - name: Push changes
+        run: |
+          git push
