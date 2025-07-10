@@ -9,12 +9,11 @@ output:
 ---
 
 1.  How to check items in and out of the demo fleet.
-2.  How to add items to the demo fleet
-3.  How to delete items from the demo fleet.
+2.  How to add items to the demo fleet.
 
 ## Checking items in and out of the Demo fleet (IPads)
 
--   Go to Librarika App
+-   Go to Demo Gear on the Home Screen
 -   select Passwords
 -   select the Librarika Password
 -   Ask Customer if they have used the Demo fleet this year
@@ -23,48 +22,56 @@ output:
 ### 1. Creating a New Member Account
 
 -   Select Members at the bottom of the screen
+
 -   Select `+` at the top Right of the screen
--   Complete these Fields: 
-- `Member No.` = `Customer Phone Number`
-- `Phone Number` 
-- `Name`
-- `Email`
+
+-   Complete these Fields:
+
+-   `Member No.` = `Customer Phone Number`
+
+-   `Phone Number`
+
+-   `Name`
+
+-   `Email`
 
 -   Select Save
--   Navgate to the Home Page
+
+-   Navgate to the Dashboard (Top of the Side bar on the Left)
 
 ### 2. Have Cusotmer Fill out Liability Waiver
 
-- Blank pages are stored under the desk. 
+-   Blank pages are stored under the desk.
 
 ### 3. Check-Out
 
--   ALL items must be checked in and out. Each individual item. Seriously tho...
+-   All Items should have a Barcode on them with the exception of Leashes, Hardware, and Handles
 
--   Press the `Quick Check Out` button
+-   Press the `Check Out` button on the Dashboard
 
--   Enter `Customer Phone Number` in the `Member No.` Field
+-   Enter `Customer Name` and Select From the Drop down
 
--   Scan item using the Ipad Camera
+-   enter product SKU or Scan With camera
 
--   Select the correct item that pops up
+-   Select the correct item from the drop down Menu
 
--   Select `Do Again` to add more items
+-   Select `Submit`
 
--   Select `Done` when all items are added
+-   to add More Items simply repeat. All selected Items with appear in Grey.
+
+-   Select `Done` when all items are added.
 
 ### 4. Payment in Lightspeed
 
-- Collect Payment in Lightspeed
-
+-   Collect Payment in Lightspeed
 
 ### 5. Check-In
 
--   Select `Quick Check-In`
+-   Select `Check-In`
 
 -   Check Item For damage
 
--   Scan Item
+-   Scan Item or enter the SKU in the System
 
 -   Add Remark for any damage noticed. Otherwise type `No Damage` and your initials.
 
@@ -88,14 +95,22 @@ plot(qr_code('https://docs.google.com/forms/d/e/1FAIpQLSddpF90TXOApElrylcqBXn94v
 
 ```
 
-## 7. Updating The Demo Fleet Booklet and Printing New Demo Fleet stickers.
+## 7. Printing New Demo Fleet stickers.
 
-Ask Jason or Nick
+1.  Navigate to Github and Login using TeamPassword
+2.  Navigate to the **LibrarikaBarcodes** Repository.
+3.  Open the Data folder. There should be 1 file in this folder.
+4.  Open Librarika in a new tab
+5.  Navigate to Reports \> Catelogue Reports \> Export all Copies and download
+6.  Upload this file to the Data folder in Github
+7.  Delete the old file from github. DO NOT DELETE BEFORE ADDING THE NEW FILE AS IT WILL DELETE THE FOLDER AS WELL
+8.  Go to Actions
+9.  Select Generate Barcode PDFs on the Left of the page.
+10. Select Run Workflow
+11. The code takes about 5 minutes to run
+12. Navigate to LibrarikaLabels.pdf and Download the FIle.
+13. Open this new file. It has all the labels for the Demo Fleet.
+14. Select The Label you want to Print and Print it using the waterproofs labels in the Zebra printer
+15. Done
 
-The script for genreating new Barcodes is in the Windance GitHub Account Repository `LibrarikaBarcodes`.
-
-See The ReadMe file in GitHub for Steps.
-
-### 8. Questions
-
--   For addional questions ask ChatGPT, if that doesnt cut it ask Jason.
+Notes: this will NOT work if you **Export all Titles** from Librarika.....
